@@ -1129,4 +1129,64 @@ https://templatemo.com/tm-596-electric-xtra
             .shape-square {
                 transform: scale(0.6);
             }
+
         }
+
+/* Channel Logo Styles */
+.channel-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #FF5E00, #00B2FF);
+    padding: 2px;
+}
+
+.hero-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.channel-logo-hero {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, #FF5E00, #00B2FF);
+    padding: 4px;
+    box-shadow: 0 0 50px rgba(255, 94, 0, 0.5);
+    animation: float 6s ease-in-out infinite;
+}
+
+.channel-logo-footer {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Enhanced CTA buttons */
+.cta-container {
+    gap: 15px;
+}
+
+.cta-button {
+    min-width: 160px;
+}
+
+/* Updated tab icons */
+.tab-icon {
+    font-size: 1.3rem;
+}
