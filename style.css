@@ -1219,8 +1219,11 @@ https://templatemo.com/tm-596-electric-xtra
         top: -30px;
     }
     .glitch-text {
-        font-size: 3rem;
+        font-size: 2.8rem;
         white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
     }
 }
 /* .shape-circle {
@@ -1229,5 +1232,6 @@ https://templatemo.com/tm-596-electric-xtra
 .shape-triangle {
     background: url('your-image.png') center/cover;
 } */
+
 
 
