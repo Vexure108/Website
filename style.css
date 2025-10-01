@@ -1205,3 +1205,19 @@ https://templatemo.com/tm-596-electric-xtra
 .hero-content {
     padding-bottom: 120px;
 }
+
+@media (min-width: 769px) {
+    .hero-logo {
+        margin-bottom: 50px;
+    }
+    .text-rotator {
+        min-height: 200px;
+        margin-top: 30px;
+    }
+    .hero-content {
+        padding-bottom: 80px;
+    }
+    .cta-container {
+        margin-top: -20px;
+    }
+}
