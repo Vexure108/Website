@@ -1207,18 +1207,16 @@ https://templatemo.com/tm-596-electric-xtra
 }
 
 @media (min-width: 769px) {
-    .hero-logo {
-        margin-bottom: 50px;
-    }
-    .text-rotator {
-        min-height: 200px;
-        margin-top: 30px;
+    .hero {
+        padding-top: 120px;
     }
     .hero-content {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
     }
     .cta-container {
-        margin-top: -20px;
+        margin-top: 0;
+        position: relative;
+        top: -30px;
     }
 }
 /* .shape-circle {
@@ -1227,3 +1225,4 @@ https://templatemo.com/tm-596-electric-xtra
 .shape-triangle {
     background: url('your-image.png') center/cover;
 } */
+
