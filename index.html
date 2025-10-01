@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test website</title>
+    <title>Vexure - Anime Edits & Presets</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="templatemo-electric-xtra.css" rel="stylesheet">
-<!--
-
-TemplateMo 596 Electric Xtra
-
-https://templatemo.com/tm-596-electric-xtra
-
--->
-<link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
 </head>
 <body>
     <!-- Animated Grid Background -->
@@ -35,22 +28,13 @@ https://templatemo.com/tm-596-electric-xtra
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo-link">
-                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
-                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
-                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
-                </svg>
+                <!-- Channel Logo -->
+                <img src="vexure-logo.png" alt="Vexure" class="channel-logo">
                 <span class="logo-text">VEXURE</span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#features" class="nav-link">Presets and Tutorials</a></li>
+                <li><a href="#features" class="nav-link">Presets & Tutorials</a></li>
                 <li><a href="#about" class="nav-link">Edits</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -65,24 +49,29 @@ https://templatemo.com/tm-596-electric-xtra
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
+            <!-- Logo in Hero Section -->
+            <div class="hero-logo">
+                <img src="vexure-logo.png" alt="Vexure" class="channel-logo-hero">
+            </div>
             <div class="text-rotator">
                 <div class="text-set active">
-                    <h1 class="glitch-text" data-text="FUTURE IS NOW">EDIT. INSPIRE. REPEAT</h1>
-                    <p class="subtitle">Free presets, top-tier tutorials, and jaw-dropping anime edits – all by Vexure.</p>
+                    <h1 class="glitch-text" data-text="ANIME EDITING">EDIT. CREATE. INSPIRE</h1>
+                    <p class="subtitle">Free presets, top-tier tutorials, and jaw-dropping anime edits – all by Vexure</p>
                 </div>
                 <div class="text-set">
-                    <h1 class="glitch-text" data-text="BEYOND LIMITS">VEXURE EDITS</h1>
-                    <p class="subtitle">Smooth. Cinematic. Unforgettable anime edits</p>
+                    <h1 class="glitch-text" data-text="VEXURE EDITS">SMOOTH. CINEMATIC. IMPACT</h1>
+                    <p class="subtitle">Frame-perfect sync, emotional storytelling, unforgettable moments</p>
                 </div>
                 <div class="text-set">
-                    <h1 class="glitch-text" data-text="ELECTRIC DREAMS">JOIN THE ARMY NOW</h1>
-                    <p class="subtitle">find high quality presets and tutorials for free</p>
+                    <h1 class="glitch-text" data-text="FREE PRESETS">ELEVATE YOUR EDITS</h1>
+                    <p class="subtitle">Download high-quality presets and tutorials for free</p>
                 </div>
             </div>
         </div>
         <div class="cta-container">
-            <a href="#features" class="cta-button cta-primary">Watch edits</a>
-            <a href="#about" class="cta-button cta-secondary">Download presets</a>
+            <a href="#features" class="cta-button cta-primary">Watch Edits</a>
+            <a href="#about" class="cta-button cta-secondary">Download Presets</a>
+            <a href="https://www.youtube.com/@Vexure" target="_blank" class="cta-button cta-secondary">YouTube Channel</a>
         </div>
     </section>
 
@@ -91,7 +80,87 @@ https://templatemo.com/tm-596-electric-xtra
         <h2 class="section-title">What Vexure Offers</h2>
         <div class="features-container">
             <div class="feature-tabs">
+                <div class="tab-item active" data-tab="performance">
+                    <span class="tab-icon">🎬</span>
+                    <span>Anime Edits</span>
+                </div>
+                <div class="tab-item" data-tab="security">
+                    <span class="tab-icon">🎨</span>
+                    <span>Free Presets</span>
+                </div>
+                <div class="tab-item" data-tab="network">
+                    <span class="tab-icon">📚</span>
+                    <span>Tutorials</span>
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <span class="tab-icon">💡</span>
+                    <span>Editing Tips</span>
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <span class="tab-icon">🌐</span>
+                    <span>Platforms</span>
+                </div>
+            </div>
+            
+            <div class="feature-content">
+                <div class="content-panel active" id="performance">
+                    <h3>Anime Edits</h3>
+                    <p>Smooth, emotionally charged anime edits that blend perfect synchronization with creative storytelling. Each edit is crafted to hit both visually and emotionally.</p>
+                    <ul class="feature-list">
+                        <li>Frame-perfect sync to music</li>
+                        <li>Cinematic color grading</li>
+                        <li>Smooth velocity adjustments</li>
+                        <li>Dynamic transition effects</li>
+                        <li>Emotional storytelling through edits</li>
+                    </ul>
+                </div>
                 
+                <div class="content-panel" id="security">
+                    <h3>Free Presets</h3>
+                    <p>High-quality editing presets available for free. Get the same effects and color grades I use in my edits to elevate your own creative work.</p>
+                    <ul class="feature-list">
+                        <li>Color grading presets</li>
+                        <li>Transition effect packs</li>
+                        <li>Velocity templates</li>
+                        <li>Glitch and distortion effects</li>
+                        <li>Regular preset updates</li>
+                    </ul>
+                </div>
+                
+                <div class="content-panel" id="network">
+                    <h3>Editing Tutorials</h3>
+                    <p>Step-by-step guides showing how I create my edits. From basic techniques to advanced effects, learn the methods behind the magic.</p>
+                    <ul class="feature-list">
+                        <li>After Effects workflow tutorials</li>
+                        <li>Velocity editing techniques</li>
+                        <li>Color grading mastery</li>
+                        <li>Sync and timing secrets</li>
+                        <li>Creative process breakdowns</li>
+                    </ul>
+                </div>
+                
+                <div class="content-panel" id="analytics">
+                    <h3>Editing Tips & Tricks</h3>
+                    <p>Pro-level tips to improve your editing workflow and creative output. Small techniques that make a big difference in your final product.</p>
+                    <ul class="feature-list">
+                        <li>Workflow optimization</li>
+                        <li>Keyboard shortcut efficiency</li>
+                        <li>File organization systems</li>
+                        <li>Rendering best practices</li>
+                        <li>Creative inspiration methods</li>
+                    </ul>
+                </div>
+                
+                <div class="content-panel" id="integration">
+                    <h3>Multi-Platform Presence</h3>
+                    <p>Find my content across multiple platforms where I share different aspects of my editing journey and connect with the community.</p>
+                    <ul class="feature-list">
+                        <li>YouTube: Full-length edits & tutorials</li>
+                        <li>Instagram: Short edits & behind scenes</li>
+                        <li>Pinterest: Visual inspiration boards</li>
+                        <li>Discord: Community & feedback</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -102,17 +171,9 @@ https://templatemo.com/tm-596-electric-xtra
         <div class="about-content">
             <div class="about-text">
                 <h2>Pioneering the Digital Edit Culture</h2>
-                <p>At Vexure, editing is more than just a skill – it’s a form of expression. I’m on a mission to make professional editing tools and techniques accessible to everyone. Whether you're just starting out or pushing the limits of what’s possible, you’ll find something here for you..</p>
+                <p>At Vexure, editing is more than just a skill – it's a form of expression. I'm on a mission to make professional editing tools and techniques accessible to everyone. Whether you're just starting out or pushing the limits of what's possible, you'll find something here for you.</p>
                 <p>From kinetic transitions to sync-perfect cuts, every edit is crafted with passion. I share not just my work, but also the tools and tutorials to help others grow. My workflow blends creativity, speed, and efficiency to produce visually stunning edits.</p>
-                <p>To create anime edits that:
-
-                Hit emotionally — not just visually
-
-                Feel smooth, professional, and artistic
-
-                Inspire both fans and creators
-
-                I’m not chasing views — I’m chasing impact.</p>
+                <p>To create anime edits that hit emotionally — not just visually. That feel smooth, professional, and artistic. That inspire both fans and creators. I'm not chasing views — I'm chasing impact.</p>
             </div>
             <div class="about-visual">
                 <div class="about-graphic"></div>
@@ -130,70 +191,10 @@ https://templatemo.com/tm-596-electric-xtra
             </div>
             <div class="about-text">
                 <h2>Innovation at Every Level</h2>
-                <p>At VEXURE, innovation means more than just effects — it’s about pushing the limits of emotion, rhythm, and storytelling in every edit. With frame-perfect cuts, cinematic color grading, and seamless transitions synced to sound, each video becomes a carefully constructed experience. By combining technical mastery with artistic intent, I transform raw anime footage into visual narratives that resonate deeply with viewers. From smooth velocity to complex layering, every detail is designed to flow, captivate, and leave a lasting impact — because in my world, every frame tells a story.</p>
-                 <p>Every VEXURE edit is a blend of precision and emotion — where creative vision meets technical execution. I approach each project like a filmmaker, using motion, music, and visual flow to craft edits that feel immersive and intentional. Whether it's syncing a subtle transition to a heartbeat or building tension through pacing and effects, I push each frame to its fullest potential. With tools like Twixtor, RSMB, and Sapphire, I don’t just follow trends — I refine them, constantly evolving my style to deliver something smoother, sharper, and more impactful every time.</p>
-                
+                <p>At VEXURE, innovation means more than just effects — it's about pushing the limits of emotion, rhythm, and storytelling in every edit. With frame-perfect cuts, cinematic color grading, and seamless transitions synced to sound, each video becomes a carefully constructed experience.</p>
+                <p>Every VEXURE edit is a blend of precision and emotion — where creative vision meets technical execution. I approach each project like a filmmaker, using motion, music, and visual flow to craft edits that feel immersive and intentional.</p>
             </div>
-            <div class="content-panel active" id="performance">
-    <h3>Anime Edits</h3>
-    <p>Smooth, emotionally charged anime edits that blend perfect synchronization with creative storytelling. Each edit is crafted to hit both visually and emotionally.</p>
-    <ul class="feature-list">
-        <li>Frame-perfect sync to music</li>
-        <li>Cinematic color grading</li>
-        <li>Smooth velocity adjustments</li>
-        <li>Dynamic transition effects</li>
-        <li>Emotional storytelling through edits</li>
-    </ul>
-</div>
-
-<div class="content-panel" id="security">
-    <h3>Free Presets</h3>
-    <p>High-quality editing presets available for free. Get the same effects and color grades I use in my edits to elevate your own creative work.</p>
-    <ul class="feature-list">
-        <li>Color grading presets</li>
-        <li>Transition effect packs</li>
-        <li>Velocity templates</li>
-        <li>Glitch and distortion effects</li>
-        <li>Regular preset updates</li>
-    </ul>
-</div>
-
-<div class="content-panel" id="network">
-    <h3>Editing Tutorials</h3>
-    <p>Step-by-step guides showing how I create my edits. From basic techniques to advanced effects, learn the methods behind the magic.</p>
-    <ul class="feature-list">
-        <li>After Effects workflow tutorials</li>
-        <li>Velocity editing techniques</li>
-        <li>Color grading mastery</li>
-        <li>Sync and timing secrets</li>
-        <li>Creative process breakdowns</li>
-    </ul>
-</div>
-
-<div class="content-panel" id="analytics">
-    <h3>Editing Tips & Tricks</h3>
-    <p>Pro-level tips to improve your editing workflow and creative output. Small techniques that make a big difference in your final product.</p>
-    <ul class="feature-list">
-        <li>Workflow optimization</li>
-        <li>Keyboard shortcut efficiency</li>
-        <li>File organization systems</li>
-        <li>Rendering best practices</li>
-        <li>Creative inspiration methods</li>
-    </ul>
-</div>
-
-<div class="content-panel" id="integration">
-    <h3>Multi-Platform Presence</h3>
-    <p>Find my content across multiple platforms where I share different aspects of my editing journey and connect with the community.</p>
-    <ul class="feature-list">
-        <li>YouTube: Full-length edits</li>
-        <li>Instagram: Short edits & behind scenes</li>
-        <li>Pinterest: Visual inspiration</li>
-        <li>TikTok: Quick tips & previews</li>
-        <li>Discord: Community & feedback</li>
-    </ul>
-</div>
-     
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -222,32 +223,32 @@ https://templatemo.com/tm-596-electric-xtra
                 </form>
             </div>
             <div class="contact-info">
-                <h3>Connect With Us</h3>
+                <h3>Connect With Vexure</h3>
                 <div class="info-item">
                     <div class="info-icon">📧</div>
                     <div class="info-details">
                         <h4>Email</h4>
-                        <p>ContectVexure@gmail.com</p>
+                        <p>ContactVexure@gmail.com</p>
                     </div>
                 </div>
                 <div class="info-item">
-                    <div class="info-icon">📱</div>
+                    <div class="info-icon">🎬</div>
                     <div class="info-details">
-                        <h4>Phone</h4>
-                        <p>101</p>
+                        <h4>YouTube</h4>
+                        <p>youtube.com/@Vexure</p>
                     </div>
                 </div>
                 <div class="info-item">
-                    <div class="info-icon">📍</div>
+                    <div class="info-icon">💬</div>
                     <div class="info-details">
-                        <h4>Location</h4>
-                        <p>XXX</p>
+                        <h4>Community</h4>
+                        <p>Join our editing community</p>
                     </div>
                 </div>
                 <div class="map-container">
                     <div class="map-placeholder">
-                        <p>Interactive Map</p>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">XXX</p>
+                        <p>Find My Content On</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">YouTube • Instagram • Pinterest</p>
                     </div>
                     <div class="map-overlay"></div>
                 </div>
@@ -258,15 +259,21 @@ https://templatemo.com/tm-596-electric-xtra
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#careers">Contact</a>
+            <!-- Logo in Footer -->
+            <div class="footer-logo">
+                <img src="vexure-logo.png" alt="Vexure" class="channel-logo-footer">
+                <span class="logo-text">VEXURE</span>
             </div>
-            <p class="copyright">© 2025 Vexure All rights reserved.Creating the edits of tommorow | Channel: <a href="http://www.youtube.com/@Vexure" target="_blank" rel="nofollow noopener">Vexure</a></p>
+            <div class="footer-links">
+                <a href="https://www.youtube.com/@Vexure" target="_blank">YouTube</a>
+                <a href="#privacy">Presets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Vexure - Anime Edits & Presets | <a href="https://www.youtube.com/@Vexure" target="_blank">Subscribe on YouTube</a></p>
         </div>
     </footer>
-<script src="templatemo-electric-scripts.js"></script>
-<script type="text/javascript" src="script.js"></script>
+
+    <script src="templatemo-electric-scripts.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
