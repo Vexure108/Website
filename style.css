@@ -1190,3 +1190,14 @@ https://templatemo.com/tm-596-electric-xtra
 .tab-icon {
     font-size: 1.3rem;
 }
+
+/* Mobile logo fix */
+@media (max-width: 768px) {
+    .channel-logo-hero {
+        width: 80px;
+        height: 80px;
+    }
+    .hero-logo {
+        margin-bottom: 20px;
+    }
+}
