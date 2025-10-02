@@ -1215,3 +1215,7 @@ footer {
         text-align: center;
     }
                         }
+
+.nav-links.active {
+    display: flex !important;
+}
