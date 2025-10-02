@@ -1216,6 +1216,16 @@ footer {
     }
                         }
 
+/* Force mobile menu display when active */
 .nav-links.active {
     display: flex !important;
+    left: 0 !important;
 }
+
+/* Ensure mobile menu stays on top */
+@media (max-width: 768px) {
+    .nav-links {
+        z-index: 1001;
+    }
+}
+
