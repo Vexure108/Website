@@ -12,20 +12,23 @@ https://templatemo.com/tm-596-electric-xtra
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 30;
+            // Define the theme's color palette for particles
+            const colors = ['#00B2FF', '#FF6600']; // Neon Blue and Neon Orange
 
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
+                
+                // Set random position, delay, and duration
                 particle.style.left = Math.random() * 100 + '%';
                 particle.style.animationDelay = Math.random() * 15 + 's';
                 particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
                 
-                // Randomly assign orange or blue color
-                if (Math.random() > 0.5) {
-                    particle.style.setProperty('--particle-color', '#00B2FF');
-                    const before = particle.style.getPropertyValue('--particle-color');
-                    particle.style.background = '#00B2FF';
-                }
+                // Randomly assign Neon Blue or Neon Orange color
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                // Set the CSS variable for the :before pseudo-element to use
+                particle.style.setProperty('--particle-color', randomColor);
                 
                 particlesContainer.appendChild(particle);
             }
