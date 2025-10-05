@@ -1136,13 +1136,16 @@ footer {
         padding-top: 50px;
         transition: left 0.3s ease;
         backdrop-filter: blur(10px);
-        border-left: 2px solid rgba(0, 255, 255, 0.3);
-        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
+        border: none; /* Remove border that was causing issues */
+        box-shadow: none; /* Remove shadow when hidden */
         z-index: 1001;
+        overflow: hidden; /* Prevent any content overflow */
     }
 
     .nav-links.active {
         left: 0;
+        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2); /* Only show shadow when active */
+        border-left: 2px solid rgba(0, 255, 255, 0.3); /* Only show border when active */
     }
 
     /* Make nav links more visible on mobile */
@@ -1154,6 +1157,7 @@ footer {
         border: 1px solid rgba(0, 255, 255, 0.2);
         margin-bottom: 15px;
         background: rgba(0, 255, 255, 0.05);
+        border-radius: 5px; /* Add rounding to prevent sharp edges */
     }
 
     .nav-links a:hover,
@@ -1161,7 +1165,7 @@ footer {
         background: rgba(0, 255, 255, 0.15);
         border-color: #00FFFF;
     }
-
+    
     .menu-toggle {
         display: flex;
     }
