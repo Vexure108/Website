@@ -38,6 +38,13 @@ https://templatemo.com/tm-596-electric-xtra
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
+
+            // Prevent body scroll when menu is open on mobile
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
         });
 
         // Close mobile menu when clicking a link
@@ -45,7 +52,20 @@ https://templatemo.com/tm-596-electric-xtra
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                document.body.style.overflow = '';
             });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const isClickInsideMenu = navLinks.contains(e.target);
+            const isClickOnToggle = menuToggle.contains(e.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && navLinks.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
 
         // Active navigation highlighting

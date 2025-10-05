@@ -287,27 +287,40 @@ nav.scrolled {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 4px;
+    gap: 5px;
+    z-index: 1002;
+    padding: 5px;
 }
 
 .menu-toggle span {
-    width: 25px;
-    height: 2px;
+    width: 28px;
+    height: 3px;
     background: #00FFFF;
     transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    border-radius: 2px;
+}
+
+.menu-toggle:hover span {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(255, 85, 0, 0.5);
+    background: linear-gradient(90deg, #00FFFF, #FF5500);
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(7px, 7px);
+    background: #FF5500;
+    box-shadow: 0 0 10px rgba(255, 85, 0, 0.8);
 }
 
 .menu-toggle.active span:nth-child(2) {
     opacity: 0;
+    transform: translateX(-20px);
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(7px, -7px);
+    background: #FF5500;
+    box-shadow: 0 0 10px rgba(255, 85, 0, 0.8);
 }
 
 /* Hero Section */
@@ -1116,16 +1129,37 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: rgba(10, 10, 10, 0.95);
+        background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
         align-items: center;
         justify-content: start;
         padding-top: 50px;
         transition: left 0.3s ease;
+        backdrop-filter: blur(10px);
+        border-left: 2px solid rgba(0, 255, 255, 0.3);
+        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
+        z-index: 1001;
     }
 
     .nav-links.active {
         left: 0;
+    }
+
+    /* Make nav links more visible on mobile */
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        width: 80%;
+        text-align: center;
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        margin-bottom: 15px;
+        background: rgba(0, 255, 255, 0.05);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: rgba(0, 255, 255, 0.15);
+        border-color: #00FFFF;
     }
 
     .menu-toggle {
@@ -1295,7 +1329,15 @@ footer {
         width: 100%;
         text-align: center;
     }
-                        }
+
+    /* Reset mobile-specific nav link styles on desktop */
+    .nav-links a {
+        width: auto;
+        border: none;
+        background: transparent;
+        margin-bottom: 0;
+    }
+}
 
 /* Force mobile menu display when active */
 .nav-links.active {
@@ -1307,6 +1349,14 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         z-index: 1001;
+    }
+
+    /* Hide HUD corners on mobile for cleaner look */
+    body::before,
+    body::after,
+    nav::before,
+    nav::after {
+        display: none;
     }
 }
 
