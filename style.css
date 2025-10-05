@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
     position: relative;
     font-weight: 400;
+    padding-top: 80px;
 }
 
 /* Animated background with neon grid */
@@ -159,6 +160,8 @@ body {
 nav {
     position: fixed;
     top: 0;
+    left: 0;          /* ADD THIS LINE */
+    right: 0;         /* ADD THIS LINE */
     width: 100%;
     padding: 20px 50px;
     background: rgba(0, 0, 0, 0.85);
@@ -1121,6 +1124,8 @@ footer {
 @media (max-width: 768px) {
     nav {
         padding: 15px 20px;
+        left: 0;
+        right: 0;
     }
 
     .nav-links {
@@ -1136,13 +1141,16 @@ footer {
         padding-top: 50px;
         transition: left 0.3s ease;
         backdrop-filter: blur(10px);
-        border-left: 2px solid rgba(0, 255, 255, 0.3);
-        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
+        border: none;
+        box-shadow: none;
         z-index: 1001;
+        overflow: hidden;
     }
 
     .nav-links.active {
         left: 0;
+        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
+        border-left: 2px solid rgba(0, 255, 255, 0.3);
     }
 
     /* Make nav links more visible on mobile */
@@ -1154,12 +1162,17 @@ footer {
         border: 1px solid rgba(0, 255, 255, 0.2);
         margin-bottom: 15px;
         background: rgba(0, 255, 255, 0.05);
+        border-radius: 5px;
     }
 
     .nav-links a:hover,
     .nav-links a.active {
         background: rgba(0, 255, 255, 0.15);
         border-color: #00FFFF;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     .menu-toggle {
