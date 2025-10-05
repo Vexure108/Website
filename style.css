@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
     position: relative;
     font-weight: 400;
-    padding-top: 80px;
 }
 
 /* Animated background with neon grid */
@@ -160,8 +159,6 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     padding: 20px 50px;
     background: rgba(0, 0, 0, 0.85);
@@ -1124,33 +1121,28 @@ footer {
 @media (max-width: 768px) {
     nav {
         padding: 15px 20px;
-        left: 0;
-        right: 0;
     }
 
     .nav-links {
         position: fixed;
-        top: 0;
+        top: 70px;
         left: -100%;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 70px);
         background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding-top: 0;
+        justify-content: start;
+        padding-top: 50px;
         transition: left 0.3s ease;
         backdrop-filter: blur(10px);
-        border: none;
-        box-shadow: none;
+        border-left: 2px solid rgba(0, 255, 255, 0.3);
+        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
         z-index: 1001;
-        overflow: hidden;
     }
 
     .nav-links.active {
         left: 0;
-        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
-        border-left: 2px solid rgba(0, 255, 255, 0.3);
     }
 
     /* Make nav links more visible on mobile */
@@ -1162,7 +1154,6 @@ footer {
         border: 1px solid rgba(0, 255, 255, 0.2);
         margin-bottom: 15px;
         background: rgba(0, 255, 255, 0.05);
-        border-radius: 5px;
     }
 
     .nav-links a:hover,
@@ -1171,12 +1162,6 @@ footer {
         border-color: #00FFFF;
     }
 
-    /* Adjust hero section padding for fixed nav */
-    .hero {
-        padding-top: 100px;
-    }
-}
-    
     .menu-toggle {
         display: flex;
     }
