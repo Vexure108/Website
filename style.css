@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
     position: relative;
     font-weight: 400;
+    padding-top: 80px;
 }
 
 /* Animated background with neon grid */
@@ -159,6 +160,8 @@ body {
 nav {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 20px 50px;
     background: rgba(0, 0, 0, 0.85);
@@ -1121,31 +1124,33 @@ footer {
 @media (max-width: 768px) {
     nav {
         padding: 15px 20px;
+        left: 0;
+        right: 0;
     }
 
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: 0;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: 100vh;
         background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
         align-items: center;
-        justify-content: start;
-        padding-top: 50px;
+        justify-content: center;
+        padding-top: 0;
         transition: left 0.3s ease;
         backdrop-filter: blur(10px);
-        border: none; /* Remove border that was causing issues */
-        box-shadow: none; /* Remove shadow when hidden */
+        border: none;
+        box-shadow: none;
         z-index: 1001;
-        overflow: hidden; /* Prevent any content overflow */
+        overflow: hidden;
     }
 
     .nav-links.active {
         left: 0;
-        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2); /* Only show shadow when active */
-        border-left: 2px solid rgba(0, 255, 255, 0.3); /* Only show border when active */
+        box-shadow: -5px 0 30px rgba(0, 255, 255, 0.2);
+        border-left: 2px solid rgba(0, 255, 255, 0.3);
     }
 
     /* Make nav links more visible on mobile */
@@ -1157,7 +1162,7 @@ footer {
         border: 1px solid rgba(0, 255, 255, 0.2);
         margin-bottom: 15px;
         background: rgba(0, 255, 255, 0.05);
-        border-radius: 5px; /* Add rounding to prevent sharp edges */
+        border-radius: 5px;
     }
 
     .nav-links a:hover,
@@ -1165,6 +1170,12 @@ footer {
         background: rgba(0, 255, 255, 0.15);
         border-color: #00FFFF;
     }
+
+    /* Adjust hero section padding for fixed nav */
+    .hero {
+        padding-top: 100px;
+    }
+}
     
     .menu-toggle {
         display: flex;
