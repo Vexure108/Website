@@ -1175,10 +1175,6 @@ footer {
         display: flex;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
-
     .hero-content {
         padding: 0 20px;
     }
@@ -1465,4 +1461,16 @@ nav::after {
     opacity: 0.03;
     animation: digital-noise 0.5s infinite;
     pointer-events: none;
+}
+/* FINAL NAVBAR FIXES */
+nav { 
+    left: 0 !important; 
+    right: 0 !important; 
+}
+
+@media (max-width: 768px) {
+    .channel-logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
 }
